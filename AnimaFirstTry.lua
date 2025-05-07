@@ -9,11 +9,16 @@ function AnimaFirstTry.OnPlayerActivated()
     d("hello world")
 end
 
+--function massivefalldmg()
+    --d("that was close careful next time")
+--end
+
 
 function AnimaFirstTry.Initialize(var1, var2) 
     -- hier wird mein addon initializiert 
     d("mein addon wurde initialisiert")
     EM:RegisterForEvent( AnimaFirstTry.name, EVENT_PLAYER_ACTIVATED, AnimaFirstTry.OnPlayerActivated )  
+    --EM:RegisterForEvent(AnimaFirstTry2.name, EVENT_HIGH_FALL_DAMAGE, massivefalldmg())
 end
 
 
