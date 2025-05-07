@@ -18,7 +18,7 @@ function AnimaFirstTry.Initialize(var1, var2)
     -- hier wird mein addon initializiert 
     d("mein addon wurde initialisiert")
     EM:RegisterForEvent( AnimaFirstTry.name, EVENT_PLAYER_ACTIVATED, AnimaFirstTry.OnPlayerActivated )  
-    EM:RegisterForEvent(AnimaFirstTry2.name, EVENT_LOW_FALL_DAMAGE, AnimaFirstTry.Falldmg())
+    EM:RegisterForEvent(AnimaFirstTry2.name, EVENT_LOW_FALL_DAMAGE, AnimaFirstTry.Falldmg)
 end
 
 
