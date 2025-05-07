@@ -20,7 +20,7 @@ end
 local OnAddonLoaded(_, addonName) 
     if addonName == AnimaFirstTry.name then  
         AnimaFirstTry.Initialize() 
-        EM:UnregisterForEvent( AnimaFirstTry.name, EVENT_ADD_ON_LOADED )
+        EM:UnregisterForEvent( AnimaFirstTry.name, EVENT_ADD_ON_LOADED, OnAddonLoaded )
     end
 end 
 
