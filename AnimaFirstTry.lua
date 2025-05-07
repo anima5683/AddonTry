@@ -10,7 +10,7 @@ function AnimaFirstTry.OnPlayerActivated()
 end
 
 function massivefalldmg()
-    d("that was close, careful next time")
+    d("that was close careful next time")
 end
 
 
