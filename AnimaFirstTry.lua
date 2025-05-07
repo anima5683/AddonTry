@@ -11,6 +11,7 @@ end
 
 function AnimaFirstTry.Falldmg()
     d("that was close careful next time")
+    EM:UnregisterForEvent(AnimaFirstTry.name, EVENT_LOW_FALL_DAMAGE, AnimaFirstTry.Falldmg)
 end
 
 
