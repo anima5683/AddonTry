@@ -2,7 +2,7 @@ AnimaFirstTry = AnimaFirstTry or {}
 
 AnimaFirstTry.name = "AnimaFirstTry" 
 
-local EM = GetEventManger() 
+local EM = GetEventManager() 
 
 
 function AnimaFirstTry.OnPlayerActivated() 
@@ -22,7 +22,7 @@ function AnimaFirstTry.Initialize(var1, var2)
 end
 
 
-local OnAddonLoaded(_, addonName) 
+local function OnAddonLoaded(_, addonName) 
     if addonName == AnimaFirstTry.name then  
         AnimaFirstTry.Initialize() 
         EM:UnregisterForEvent( AnimaFirstTry.name, EVENT_ADD_ON_LOADED, OnAddonLoaded )
